@@ -117,6 +117,7 @@ def remove_invalid_rows(df):
 if __name__ == "__main__":
     raw_path = "data/raw/sales_data_raw.csv"
     cleaned_path = "data/processed/sales_data_clean.csv"
+    
     df_raw = load_data(raw_path)
     df_clean = clean_column_names(df_raw)
     df_clean = strip_product_and_category(df_clean) 
